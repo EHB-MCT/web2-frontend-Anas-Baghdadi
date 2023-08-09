@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meal Planner</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">Meal<span>Magic</span></a>
+        <div class="welcome-section">
+          <p id="welcomemessage"></p>
+        </div>
+        <nav>
+            <ul class="nav-list">
+              <li><a href="/home.html">Home</a></li>
+              <li><a href="/plan.html">Meal Planner</a></li>
+              <li><a href="/recipes.html">Recipes</a></li>
+              <li><a href="/favorites.html">Favorites</a></li>
+              <li><a href="/add-plan.html">MyMealPLan</a></li>
+              <button id="logoutButton">Log Out</button>
+            </ul>    
+      
+          </nav>
+      </header>
+  <div class="container">
+    <div class="recipe-box">
+    <button id="generateButton">New Recipes</button>
+    <!-- <label for="filterSelect">Filter By:</label>
+<select id="filterSelect">
+  <option value="all">All</option>
+  <option value="favorites">Favorites</option>
+</select> -->
+    </div>
+    
+    <div id="recipeContainer"></div>
+  </div>
+
+  <script src="recipes.js"></script>
+  <script src="favorites.js"></script>
+
+ 
+
+</body>
+</html>
