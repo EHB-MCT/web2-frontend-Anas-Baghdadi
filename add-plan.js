@@ -28,7 +28,7 @@ function getMeals() {
         displayMeals(data);
       })
       .catch((error) => {
-        console.error('Erreur lors de la récupération des repas:', error);
+        console.error('Error during fetching meals', error);
       });
 }
   
@@ -56,14 +56,14 @@ mealForm.addEventListener('submit', (event) => {
         })
         .then((response) => response.json())
         .then((data) => {
-            console.log('Repas ajouté:', data);
+            console.log('Meal added', data);
             //Update the user interface by fetching the meals again
             getMeals();
             // Reset the form
             mealForm.reset();
         })
         .catch((error) => {
-            console.error('Erreur lors de l\'ajout du repas:', error);
+            console.error('Error during fetching meals', error);
         });
 });
 
@@ -73,12 +73,12 @@ function deleteMeal(mealId) {
             method: 'DELETE',
         })
         .then(() => {
-            console.log('Repas supprimé avec succès.');
+            console.log('Meal deleted');
             // Update the user interface by fetching the meals again
             getMeals();
         })
         .catch((error) => {
-            console.error('Erreur lors de la suppression du repas:', error);
+            console.error('Error during fetching meals', error);
         });
 }
 
@@ -94,7 +94,7 @@ function getMealDetails(mealId) {
             document.getElementById('caloriesUpdate').value = meal.calories;
         })
         .catch((error) => {
-            console.error('Erreur lors de la récupération du repas pour la mise à jour:', error);
+            console.error('Error retrieving meal for update:', error);
         });
 }
 
@@ -135,12 +135,12 @@ function editMeal(mealId) {
             })
             .then((response) => response.json())
             .then((updatedMeal) => {
-                console.log('Repas mis à jour:', updatedMeal);
+                console.log('Meal updated', updatedMeal);
                 // Update the user interface by fetching the meals again
                 getMeals();
             })
             .catch((error) => {
-                console.error('Erreur lors de la mise à jour du repas:', error);
+                console.error('Error updating meal', error);
             });
     });
 

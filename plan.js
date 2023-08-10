@@ -21,11 +21,15 @@ document.getElementById('generateButton').addEventListener('click', () => {
 
 
         if (meal.nutrients && meal.nutrients.calories !== undefined) {
+        
           // add calories of meal
           const caloriesElement = document.createElement('p');
           caloriesElement.textContent = `Calories: ${meal.nutrients.calories}`;
           mealDiv.appendChild(caloriesElement);
         }
+
+        const recipeCard = document.createElement('div');
+        recipeCard.classList.add('recipe-card');
 
 
         // add image of meal if its available
@@ -50,6 +54,7 @@ document.getElementById('generateButton').addEventListener('click', () => {
         recipeLinkElement.href = meal.sourceUrl;
         recipeLinkElement.textContent = 'See the full recipe';
         recipeLinkElement.target = '_blank'; // add link in new tab
+        recipeLinkElement.classList.add('recipe-link');
         mealDiv.appendChild(recipeLinkElement);
 
         mealContainer.appendChild(mealDiv);

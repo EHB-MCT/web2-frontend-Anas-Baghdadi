@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
     <script src="login.js" defer></script>
     <title>Login Page</title>
 </head>
@@ -18,8 +22,6 @@
         <div class="login-container">
             <h1>Login</h1>
             <div class="button-section">
-            <!-- <a href="register.html" class="btn btn-secondary">Register</a> -->
-            <!-- <a href="home.html" class="btn btn-secondary">Back to home</a> -->
         </div>
             
             <div class="image-section">
@@ -28,13 +30,17 @@
 
             <form id="loginform">
               <div class="mb-3">
-                <i class='bx bx-envelope' ></i> 
-                  <label for="inputEmail" class="form-label">Email address</label>
+                <label for="inputEmail" class="form-label">
+                    <i class='bx bx-envelope'></i> 
+                    Email address
+                </label>
                   <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <i class='bx bx-lock-alt' ></i>
-                  <label for="inputPassword" class="form-label">Password</label>
+                <label for="inputPassword" class="form-label">
+                    <i class="bx bxs-lock-alt"></i> 
+                    Password
+                </label>
                   <input type="password" class="form-control" id="inputPassword">
               </div>
               <br>

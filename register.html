@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css"> 
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <script src="register.js" defer></script>
   <title>Session 8 - Login/Register</title>
 </head>
@@ -17,8 +21,6 @@
  
   
     <div class="button-section">
-      <!-- <a href="login.html" class="btn btn-secondary">Login</a> -->
-      <!-- <a href="home.html" class="btn btn-secondary">Back to home</a>  -->
     </div>
     
     <br>
@@ -29,21 +31,28 @@
     <div class="login-content">
 
       <form id="registerForm">
-        <div class="mb-3">
-          <i class='bx bxs-user' ></i>  
-          <label for="inputUsername" class="form-label">Username</label>
+        <div class="mb-3"> 
+          <label for="inputUsername" class="form-label">
+            <i class='bx bxs-user' ></i>
+            Username
+             
+          </label>
           <input type="text" class="form-control" id="inputUsername">
               
         </div>
         <div class="mb-3">
-          <i class='bx bx-envelope' ></i> 
-          <label for="inputEmail" class="form-label">Email address</label>
+          <label for="inputEmail" class="form-label">
+            <i class='bx bx-envelope'></i> 
+            Email address
+        </label>
           <input type="email" class="form-control" id="inputEmail" >
                
         </div>
         <div class="mb-3">
-          <i class='bx bx-lock-alt' ></i>
-          <label for="InputPassword" class="form-label">Password</label>
+          
+          <label for="InputPassword" class="form-label">
+            <i class='bx bx-lock-alt' ></i>
+            Password</label>
           <input type="password" class="form-control" id="inputPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
           
         </div>
@@ -56,7 +65,6 @@
         <br>
         <button type="submit" class="btn btn-primary">Submit</button>
         <div class="register-image">
-          <!-- <img src="./images/register-image.png" alt="Meal Image"> -->
         </div>
       </form>
 

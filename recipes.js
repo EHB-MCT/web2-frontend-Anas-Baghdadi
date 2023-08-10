@@ -1,15 +1,11 @@
-// API key declaration
+
 const apiKey = 'ca4f5f3814034176897c6a3861ce159d';
 
-// References to HTML elements
+
 const generateButton = document.getElementById('generateButton');
 const sortSelect = document.getElementById('sortSelect');
 const recipeContainer = document.getElementById('recipeContainer');
-// //$$$
-// const filterSelect = document.getElementById('filterSelect');
-// // const favoriteRecipeContainer = document.getElementById('favoriteRecipeContainer');
-// //$$$
-// filterSelect.addEventListener('change', applyFilter);
+
 
 window.addEventListener('load', () => {
   generateRecipes();
@@ -52,13 +48,13 @@ function displayRecipes(recipes) {
   
       // Create a link element for the recipe details page
       const recipeLink = document.createElement('a');
-      recipeLink.href = recipe.sourceUrl; // Use the recipe's source URL
-      recipeLink.target = "_blank"; // Open link in a new tab
+      recipeLink.href = recipe.sourceUrl; 
+      recipeLink.target = "_blank"; 
   
       // Set recipe image
       const recipeImage = document.createElement('img');
-      recipeImage.src = recipe.image; // Use the recipe's image URL
-      recipeImage.alt = recipe.title; // Set alt text
+      recipeImage.src = recipe.image; 
+      recipeImage.alt = recipe.title; 
       recipeLink.appendChild(recipeImage);
   
       // Set recipe title as the link's text content
@@ -94,14 +90,4 @@ function loadFavorites() {
   favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 }
 
-//$$$
-// function applyFilter() {
-//   const filterValue = filterSelect.value;
 
-//   if (filterValue === 'all') {
-//     displayRecipes(recipes);
-//   } else if (filterValue === 'favorites') {
-//     const favoriteRecipes = recipes.filter(recipe => favorites.some(favorite => favorite.id === recipe.id));
-//     displayRecipes(favoriteRecipes);
-//   }
-// }

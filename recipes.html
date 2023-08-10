@@ -3,6 +3,10 @@
 <head>
   <title>Meal Planner</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,10 +17,10 @@
         <nav>
             <ul class="nav-list">
               <li><a href="/home.html">Home</a></li>
-              <li><a href="/plan.html">Meal Planner</a></li>
+              <li><a href="/plan.html">Planner</a></li>
               <li><a href="/recipes.html">Recipes</a></li>
               <li><a href="/favorites.html">Favorites</a></li>
-              <li><a href="/add-plan.html">MyMealPLan</a></li>
+              <li><a href="/add-plan.html">MyPLan</a></li>
               <button id="logoutButton">Log Out</button>
             </ul>    
       
@@ -25,11 +29,6 @@
   <div class="container">
     <div class="recipe-box">
     <button id="generateButton">New Recipes</button>
-    <!-- <label for="filterSelect">Filter By:</label>
-<select id="filterSelect">
-  <option value="all">All</option>
-  <option value="favorites">Favorites</option>
-</select> -->
     </div>
     
     <div id="recipeContainer"></div>
@@ -37,6 +36,7 @@
 
   <script src="recipes.js"></script>
   <script src="favorites.js"></script>
+  <script src="home.js"></script>
 
  
 
