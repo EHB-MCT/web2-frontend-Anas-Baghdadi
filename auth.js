@@ -6,5 +6,5 @@ if(user){
     //set navigation data
     //fill in username
 }else{
-    window.location.href = "/frontend/login.html"
+    window.location.href = "login.html"
 }

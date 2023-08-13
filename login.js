@@ -6,7 +6,8 @@ document.getElementById('loginform').addEventListener("submit", event => {
     user.password = document.getElementById("inputPassword").value;
 
     //Check for login
-    getData("http://localhost:3000/login", "POST", user).then(result => {
+    // getData("http://localhost:3000/login", "POST", user).then(result => {
+    getData("login.html", "POST", user).then(result => {
 
         sessionStorage.setItem('user', JSON.stringify(result.data))
         window.location.href = "home.html"
