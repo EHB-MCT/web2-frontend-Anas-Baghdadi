@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="images/home-image.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Home page</title>
+</head>
+
+<body class="container">
+  <header>
+    <a href="index.html" class="logo">Meal<span>Magic</span></a>
+    <div class="welcome-section">
+      <p id="welcomemessage"></p>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plan.html">Planner</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="meals.html">MyPLan</a></li>
+        <button id="logoutButton">Log Out</button>
+      </ul>
+
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1><span>Welcome </span>to the Delicious Meal Plans </h1>
+      <p>Explore an array of delectable meal plans and recipes, designed to elevate your dining experience. Craft
+        flavorful dishes that harmonize taste and nutrition, making every meal a culinary delight.</p>
+    </div>
+    <div class="image-section1">
+      <img src="./images/home-image.png" alt="Meal Image">
+    </div>
+  </section>
+  <main>
+    <div class="welcome-section">
+      <p id="welcomemessage"></p>
+
+    </div>
+
+    <div id="statusbox">
+
+    </div>
+  </main>
+
+  <script src="/src/auth.js" defer></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
